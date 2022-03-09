@@ -1,6 +1,9 @@
-const Booking = () => {
+const Booking = ({booking}) => {
+
+
+
     return (
-        <p>This is going to be a booking</p>
+        <li>Name: {booking.name} Email:{booking.email}</li>
     )
 }
 

@@ -19,7 +19,7 @@ function App() {
     <>
     <h1>Hotel still to be named..</h1>
     <Form/>
-    <BookingsContainer/>
+    <BookingsContainer bookings={bookings}/>
     </>
   );
 }
