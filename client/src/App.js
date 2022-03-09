@@ -15,10 +15,16 @@ function App() {
     })
   }, [])
 
+  const addBooking = (booking) => {
+    const temp = bookings.map(s => s);
+    temp.push(booking);
+    setBookings(temp)
+  };
+
   return (
     <>
     <h1>Hotel still to be named..</h1>
-    <Form/>
+    <Form addBooking={addBooking}/>
     <BookingsContainer bookings={bookings}/>
     </>
   );
